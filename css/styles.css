@@ -116,3 +116,9 @@ aside {
     .botones a:hover {
       background: #fff;
       color: #000; }
+
+.descripcion {
+  display: none; }
+
+.elemento_acordeon {
+  cursor: pointer; }

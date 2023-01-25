@@ -21,7 +21,21 @@ var tema_1 = document.querySelector(".uno");
 var tema_2 = document.querySelector(".dos");
 var tema_3 = document.querySelector(".tres");
 var controlDisplayTema = 0;
-var temaActual = 0;
+var temaActual = localStorage.getItem("tema");
+
+//Para mostrar los temas guardados en el localStorage
+
+switch (temaActual) {
+    case "0":
+        cambiarTema("#4e627e", "#0e2038", "#fff", "#26404d", "#fff", "#000", "#000");
+        break;
+    case "1":
+        cambiarTema("#cee8ce", "#608334", "#f7feef", "#97b670", "#f7feef", "#314f00", "#fff");
+        break;
+    case "2":
+        cambiarTema("#838280", "#1f1a17", "#c1c1c1", "#615d5c", "#000", "#000", "#fff");
+        break;
+}
 
 brocha.addEventListener("click", function (event) {
 
@@ -49,16 +63,22 @@ tema_1.addEventListener("click", function (event) {
     cambiarTema("#4e627e", "#0e2038", "#fff", "#26404d", "#fff", "#000", "#000");
 
     temaActual = 0;
+
+    localStorage.setItem("tema", temaActual);
 });
 
 tema_2.addEventListener("click", function (event) {
     cambiarTema("#cee8ce", "#608334", "#f7feef", "#97b670", "#f7feef", "#314f00", "#fff");
 
     temaActual = 1;
+
+    localStorage.setItem("tema", temaActual);
 });
 
 tema_3.addEventListener("click", function (event) {
     cambiarTema("#838280", "#1f1a17", "#c1c1c1", "#615d5c", "#000", "#000", "#fff");
 
     temaActual = 2;
+
+    localStorage.setItem("tema", temaActual);
 });
