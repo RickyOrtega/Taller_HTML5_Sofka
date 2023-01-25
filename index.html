@@ -10,7 +10,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <title>Inicio</title>
-    <script src="js/dinamismo.js"></script>
 </head>
 
 <body>
@@ -18,6 +17,14 @@
         <header>
             <div class="nombre">
                 <h1>Ricky Rhonaldo Ortega Vital</h1>
+                <div class="cambio_tema" id="cambio_tema">
+                    <div>
+                        <img src="img/brocha_b.png" width="50px">
+                    </div>
+                    <div class="tema uno" id="uno"></div>
+                    <div class="tema dos" id="dos"></div>
+                    <div class="tema tres" id="tres"></div>
+                </div>
                 <h3>Hoja de vida</h3>
             </div>
             <nav>
@@ -26,19 +33,19 @@
                         <a href="index.html">Inicio</a>
                     </li>
                     <li>
-                        <a href="informacion_principal.html">Principal</a>
+                        <a href="informacion_principal.html" class="tema">Principal</a>
                     </li>
                     <li>
-                        <a href="experiencia_laboral.html">Experiencia laboral</a>
+                        <a href="experiencia_laboral.html" class="tema">Experiencia laboral</a>
                     </li>
                     <li>
-                        <a href="referencias_personales.html">Referencias personales</a>
+                        <a href="referencias_personales.html" class="tema">Referencias personales</a>
                     </li>
                     <li>
-                        <a href="referencias_familiares.html">Referencias familiares</a>
+                        <a href="referencias_familiares.html" class="tema">Referencias familiares</a>
                     </li>
                     <li>
-                        <a href="estudios_realizados.html">Estudios realizados</a>
+                        <a href="estudios_realizados.html" class="tema">Estudios realizados</a>
                     </li>
                 </ul>
             </nav>
@@ -49,10 +56,10 @@
                     <img src="img/foto.jpg" alt="" srcset="">
                 </div>
                 <div class="botones" style="display: flex; justify-content: flex-end;">
-                    <div class="boton index" style="display: none;">
+                    <div class="boton index tema" style="display: none;">
                         <a href="index.html">this</a>
                     </div>
-                    <div class="boton principal">
+                    <div class="boton principal tema">
                         <a href="informacion_principal.html">Información principal</a>
                     </div>
                 </div>
@@ -61,7 +68,7 @@
                 <div>
                     <h2>Descargar hoja de vida</h2>
                     <a href="docs/Hoja_de_Vida_Ricky_Ortega.pdf" download="Hoja de vida - Ricky Rhonaldo Ortega Vital">
-                        <p class="descarga">
+                        <p class="descarga tema">
                             Descargar
                         </p>
                     </a>
@@ -69,6 +76,7 @@
             </aside>
         </div>
     </div>
+    <script src="js/dinamismo.js"></script>
 </body>
 
 </html>

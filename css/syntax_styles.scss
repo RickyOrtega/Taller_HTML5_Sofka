@@ -8,19 +8,57 @@
 
 body{
     font-family: 'Poppins', sans-serif;
-    background: rgb(199, 199, 199);
+    background: #4e627e;
+
 }
 
 .contenedor{
     max-width: 1024px;
     margin: 0 auto;
-    background: #727c8a;
+    background: #4e627e;
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 10px;
 }
 
 h1, h3{
     color: #fff;
     text-align: center;
     padding: 20px;
+}
+
+.cambio_tema{
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+    position: absolute;
+    text-align: center;
+    border-radius: 50px;
+    &:hover{
+        cursor: pointer;
+        background-image: none;
+        padding: 10px;
+        border-radius: 50px;
+    }
+    .tema{
+        display: inline;
+        width: 50px;
+        height: 50px;
+        border: rgb(255, 255, 255) solid 1px;
+        border-radius: 50px;
+        margin: 0 10px;
+        display: none;
+    }
+
+    .uno{
+        background: #0e2038;
+    }
+
+    .dos{
+        background: #608334;
+    }
+
+    .tres{
+        background: #4b4b4b;
+    }
 }
 
 header{
@@ -82,7 +120,7 @@ main{
 
 aside{
     width: 30%;
-    background: rgb(38, 64, 77);
+    background: #26404d;
     h2, p,a{
         color: #fff;
         width: 100%;
